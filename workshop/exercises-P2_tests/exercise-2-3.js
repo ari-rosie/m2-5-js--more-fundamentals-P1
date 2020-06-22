@@ -9,12 +9,9 @@
 //   - `typeof 3` returns 'number')
 
 function sumDigits(input) {
-  if (input.length == 2) {
-    if (typeof input[0] === 'number' && typeof input[1] === 'number')
-      return input[0] + input[1];
-    else
-      return undefined;
-  } else
+  if (input.length == 2) 
+    return (typeof input[0] === 'number' && typeof input[1] === 'number') ? input[0] + input[1] : undefined;
+  else
     return undefined;
 
 }
