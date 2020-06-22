@@ -12,11 +12,27 @@
 // f(["foo", -1]) // ""
 
 function repeat(arr) {
-  // Your code here
+  if (typeof arr[0] === 'string' && typeof arr[1] === 'number') {
+    let str = '';
+    if (arr[1] > 0) {
+      str = arr[0];
+      for (let i = 1; i < arr[1]; i++)
+        str = str.concat(arr[0]);
+    }
+    return str;
+  }  
+  else
+    return undefined;
 }
-
 // We need 7 test cases.
 // Don't forget to test all of the question parameters
+expect(repeat(["BOUM", 3]), "BOUMBOUMBOUM");
+expect(repeat(["BOUM", 0]), "");
+expect(repeat(["BOUM", -4]), "");
+expect(repeat([3000, 2]), undefined);
+expect(repeat(["BOUM", "a"]), undefined);
+expect(repeat(["", 5]), "");
+expect(repeat([" ", 5]), "     ");
 
 /**
  * -------------------------------------------------------------------
