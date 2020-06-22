@@ -21,12 +21,16 @@ const reverseString = (str) => {
 // Expand each of the following and get the result of the expression
 // 1-1
 square(decrement(square(decrement(3))));
+//answer = 9
 
 // 1-2
 decrement(decrement(square(square(3))));
+//answer = 80
 
 // 1-3
 duplicateString(reverseString('hello'));
+//answer = "olleholleh"
 
 // 1-4
 reverseString(duplicateString(duplicateString('foo')));
+//answer = "oofoofoofoof"
