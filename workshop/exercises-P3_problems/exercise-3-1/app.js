@@ -19,7 +19,7 @@ const buttonEffect = btnId => {
             button.style.opacity = '0%';
             break;
         case 'btn-2':
-            button.style.backgroundColor = 'red';
+            button.style.backgroundColor = 'crimson';
             break;
         case 'btn-3':
             button.style.backgroundColor = 'lightblue';
